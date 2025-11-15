@@ -1,0 +1,27 @@
+[project]
+name = "seminario-2025"
+version = "0.0.1"
+description = "Data analysis of the adults dataset and a model pipeline"
+authors = [
+    {name = "gagarciav82",email = "gustavo.garciav@usantotomas.edu.co"}
+]
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "pandas (>=2.3.3,<3.0.0)",
+    "scikit-learn (>=1.7.2,<2.0.0)",
+    "matplotlib (>=3.10.7,<4.0.0)",
+    "numpy (>=2.3.4,<3.0.0)",
+    "seaborn (>=0.13.2,<0.14.0)",
+    "ucimlrepo (>=0.0.7,<0.0.8)"
+]
+
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[dependency-groups]
+dev = [
+    "ipykernel (>=7.1.0,<8.0.0)"
+]
